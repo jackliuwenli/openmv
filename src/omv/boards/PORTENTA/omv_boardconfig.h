@@ -268,6 +268,20 @@
 
 #define SOFT_I2C_SPIN_DELAY          64
 
+#define AUDIO_SAI                   (SAI4_Block_A)
+
+#define AUDIO_SAI_CLK_ENABLE()      __HAL_RCC_SAI4_CLK_ENABLE()
+#define AUDIO_SAI_CLK_DISABLE()     __HAL_RCC_SAI4_CLK_DISABLE()
+
+#define AUDIO_SAI_CK_AF             (GPIO_AF10_SAI4)
+#define AUDIO_SAI_D1_AF             (GPIO_AF10_SAI4)
+
+#define AUDIO_SAI_CK_PIN            (GPIO_PIN_2)
+#define AUDIO_SAI_D1_PIN            (GPIO_PIN_2)
+
+#define AUDIO_SAI_CK_PORT           (GPIOE)
+#define AUDIO_SAI_D1_PORT           (GPIOB)
+
 // Enable additional GPIO banks for DRAM...
 #define OMV_ENABLE_GPIO_BANK_F
 #define OMV_ENABLE_GPIO_BANK_G
