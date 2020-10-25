@@ -1256,3 +1256,11 @@ Q(angular_rate_mdps)
 Q(temperature_c)
 Q(roll)
 Q(pitch)
+
+// Audio Module
+Q(audio)
+Q(init)
+Q(gain)
+Q(read_pdm)
+Q(read_pcm)
+Q(pdm_to_pcm)
